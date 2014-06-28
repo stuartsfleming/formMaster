@@ -25,6 +25,12 @@
   <ViewUsage
     Name="FormMasterQuestionVO2"
     ViewObjectName="dge.viewObjects.FormMasterQuestionVO"/>
+  <ViewUsage
+    Name="FormMasterClientDataVO1"
+    ViewObjectName="dge.viewObjects.FormMasterClientDataVO"/>
+  <ViewUsage
+    Name="FormMasterClientDataVO2"
+    ViewObjectName="dge.viewObjects.FormMasterClientDataVO"/>
   <ViewLinkUsage
     Name="FormMasterSeqFkLink1"
     ViewLinkObjectName="dge.viewObjects.viewLinks.FormMasterSeqFkLink"

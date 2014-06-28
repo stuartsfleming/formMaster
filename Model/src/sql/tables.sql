@@ -84,3 +84,22 @@ commit ;
 @s form_master             
 @s FORM_MASTER_VERSIONS
 @s FORM_MASTER_QUESTIONS
+
+create or replace view form_master_client_data as (
+select
+EMPLOYEE_ID        fm_seq ,
+first_name                 fname ,
+last_name                 lname ,       
+email                         login ,
+phone_number        phone ,
+job_id                       role  ,
+(select job_title from hr.jobs where job_id = e.job_id)   job_title ,
+manager_id             manager_id ,
+(select last_name||', '||first_name from hr.employees where employee_id = manager_id)   manager
+from hr.employees e  );
+
+
+
+
+
+
