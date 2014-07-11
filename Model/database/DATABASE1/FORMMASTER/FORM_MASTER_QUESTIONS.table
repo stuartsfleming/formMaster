@@ -1,0 +1,533 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1111/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">764c2473-5d35-46ae-ae9d-8da97a1a71b6</identifier>
+  </ID>
+  <name>FORM_MASTER_QUESTIONS</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">766662ef-071e-482e-b5a5-235d0f53a74b</identifier>
+      </ID>
+      <name>QUESTION_SEQ</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">ab7f7903-3e7c-4e0f-9f9e-27c7af4f883d</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>QUESTION_SEQ</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FORM_MASTER_QUESTIONS</name>
+                  <identifier class="java.math.BigDecimal">130364</identifier>
+                  <schemaName>FORMMASTER</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>QUESTION_SEQ</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>FORM_MASTER_QUESTIONS</name>
+              <identifier class="java.math.BigDecimal">130364</identifier>
+              <schemaName>FORMMASTER</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">a751ea1a-95fc-4d97-8a9f-b7de0131c69f</identifier>
+      </ID>
+      <name>VERSION_SEQ</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">d9bb3edd-9a14-4187-a4e9-dfe2c926bfa9</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>VERSION_SEQ</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FORM_MASTER_QUESTIONS</name>
+                  <identifier class="java.math.BigDecimal">130364</identifier>
+                  <schemaName>FORMMASTER</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>VERSION_SEQ</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>FORM_MASTER_QUESTIONS</name>
+              <identifier class="java.math.BigDecimal">130364</identifier>
+              <schemaName>FORMMASTER</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">d5af53ba-4358-475d-b1a3-e47757b95012</identifier>
+      </ID>
+      <name>QUESTION_ORDER</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">0715cc91-69a3-41ab-ad4e-5da6e9ab2ed6</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>QUESTION_ORDER</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FORM_MASTER_QUESTIONS</name>
+                  <identifier class="java.math.BigDecimal">130364</identifier>
+                  <schemaName>FORMMASTER</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>QUESTION_ORDER</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>FORM_MASTER_QUESTIONS</name>
+              <identifier class="java.math.BigDecimal">130364</identifier>
+              <schemaName>FORMMASTER</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">eb30da45-d7d3-4ddd-bcb3-780a33ff4fe4</identifier>
+      </ID>
+      <name>QUESTION</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">ad522047-be99-4bc7-87b5-168701292a01</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">200</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>QUESTION</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FORM_MASTER_QUESTIONS</name>
+                  <identifier class="java.math.BigDecimal">130364</identifier>
+                  <schemaName>FORMMASTER</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>QUESTION</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>FORM_MASTER_QUESTIONS</name>
+              <identifier class="java.math.BigDecimal">130364</identifier>
+              <schemaName>FORMMASTER</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">d2b79d32-3348-4e11-acb7-b2f7103d1aae</identifier>
+      </ID>
+      <name>QUESTION_DATATYPE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">00630a10-a81a-46cf-98c0-73768304e9d0</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">2</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>QUESTION_DATATYPE</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FORM_MASTER_QUESTIONS</name>
+                  <identifier class="java.math.BigDecimal">130364</identifier>
+                  <schemaName>FORMMASTER</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>QUESTION_DATATYPE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>FORM_MASTER_QUESTIONS</name>
+              <identifier class="java.math.BigDecimal">130364</identifier>
+              <schemaName>FORMMASTER</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">7757c085-ee67-457c-b47e-aac1e2ade63d</identifier>
+      </ID>
+      <name>USER_NAME</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">3ad890cb-f47d-4d07-a22a-7ebdb50fb7f1</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>USER_NAME</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FORM_MASTER_QUESTIONS</name>
+                  <identifier class="java.math.BigDecimal">130364</identifier>
+                  <schemaName>FORMMASTER</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>USER_NAME</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>FORM_MASTER_QUESTIONS</name>
+              <identifier class="java.math.BigDecimal">130364</identifier>
+              <schemaName>FORMMASTER</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">8d731352-5ca2-4531-8236-705bcdf75d7f</identifier>
+      </ID>
+      <name>ONLINE_DATE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">ee493ee5-89f5-4000-b87f-bfc9000a2a94</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>DATE</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>ONLINE_DATE</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FORM_MASTER_QUESTIONS</name>
+                  <identifier class="java.math.BigDecimal">130364</identifier>
+                  <schemaName>FORMMASTER</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ONLINE_DATE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>FORM_MASTER_QUESTIONS</name>
+              <identifier class="java.math.BigDecimal">130364</identifier>
+              <schemaName>FORMMASTER</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">31096152-f13a-41ff-981c-c47088770156</identifier>
+      </ID>
+      <name>VERSION_SEQ_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>VERSION_SEQ</name>
+          <identifier class="java.lang.String">a751ea1a-95fc-4d97-8a9f-b7de0131c69f</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>FORM_MASTER_QUESTIONS</name>
+            <identifier class="java.lang.String">764c2473-5d35-46ae-ae9d-8da97a1a71b6</identifier>
+            <schemaName>FORMMASTER</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>FORMMASTER</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>VERSION_SEQ_FK</name>
+            <childObjectNames>
+              <childObjectName>VERSION_SEQ</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>FORM_MASTER_QUESTIONS</name>
+              <identifier class="java.math.BigDecimal">130364</identifier>
+              <schemaName>FORMMASTER</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>VERSION_SEQ_PK</name>
+        <identifier class="java.lang.String">41673509-9d34-427e-bf9a-600f8e253adc</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>FORM_MASTER_VERSIONS</name>
+          <identifier class="java.lang.String">9279cbde-a103-4381-8b67-b7544d3f5cc6</identifier>
+          <schemaName>FORMMASTER</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>FORMMASTER</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">6956be49-4225-47d0-a7c2-a55f540db60e</identifier>
+      </ID>
+      <name>QUESTION_SEQ_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>QUESTION_SEQ</name>
+          <identifier class="java.lang.String">766662ef-071e-482e-b5a5-235d0f53a74b</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>FORM_MASTER_QUESTIONS</name>
+            <identifier class="java.lang.String">764c2473-5d35-46ae-ae9d-8da97a1a71b6</identifier>
+            <schemaName>FORMMASTER</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>FORMMASTER</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>QUESTION_SEQ_PK</name>
+            <childObjectNames>
+              <childObjectName>QUESTION_SEQ</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>FORM_MASTER_QUESTIONS</name>
+              <identifier class="java.math.BigDecimal">130364</identifier>
+              <schemaName>FORMMASTER</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>PKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+  </constraints>
+  <properties>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_CONNECTION</key>
+      <value class="java.lang.String">FORMMASTER</value>
+    </entry>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+      <value class="oracle.javatools.db.ReferenceID">
+        <name>FORM_MASTER_QUESTIONS</name>
+        <identifier class="java.math.BigDecimal">130364</identifier>
+        <schemaName>FORMMASTER</schemaName>
+        <type>TABLE</type>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleStorageProperties</key>
+      <value class="oracle.javatools.db.ora.OracleStorageProperties">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">d37c8cc9-3066-4be7-935e-13007eb0c2d6</identifier>
+        </ID>
+        <bufferMode>DEFAULT</bufferMode>
+        <initialExtent>65536</initialExtent>
+        <initrans>1</initrans>
+        <logging>true</logging>
+        <maxExtent>2147483645</maxExtent>
+        <minExtent>1</minExtent>
+        <nextExtent>1048576</nextExtent>
+        <percentFree>10</percentFree>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>FORM_MASTER_QUESTIONS</name>
+                <identifier class="java.math.BigDecimal">130364</identifier>
+                <schemaName>FORMMASTER</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>OracleStorageProperties</type>
+            </value>
+          </entry>
+        </properties>
+        <tablespaceID class="oracle.javatools.db.ReferenceID">
+          <name>USERS</name>
+          <type>TABLESPACE</type>
+        </tablespaceID>
+      </value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>FORMMASTER</name>
+  </schema>
+</table>
