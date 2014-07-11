@@ -67,6 +67,7 @@
       <list n="technologyScope">
          <string v="Java"/>
          <string v="ADFbc"/>
+         <string v="Database"/>
       </list>
    </hash>
    <value n="oracle.jbo.SavedPreferences" v="true"/>
