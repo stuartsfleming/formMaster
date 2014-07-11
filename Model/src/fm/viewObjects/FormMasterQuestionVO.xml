@@ -121,7 +121,7 @@ FROM FORM_MASTER_QUESTIONS FormMasterQuestions]]>
     ColumnType="DATE"
     AliasName="ONLINE_DATE"
     Expression="ONLINE_DATE"
-    SQLType="TIMESTAMP">
+    SQLType="DATE">
     <DesignTime>
       <Attr Name="_DisplaySize" Value="7"/>
     </DesignTime>

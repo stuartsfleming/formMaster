@@ -13,29 +13,29 @@
     Name="FormMasterVersionEO"
     Cardinality="1"
     Source="true"
-    Owner="dge.entities.FormMasterVersionEO">
+    Owner="fm.entities.FormMasterVersionEO">
     <DesignTime>
       <Attr Name="_aggregation" Value="0"/>
       <Attr Name="_finderName" Value="FormMasterVersionEO"/>
-      <Attr Name="_foreignKey" Value="dge.entities.FormMasterVersionEO.VersionSeqPk"/>
+      <Attr Name="_foreignKey" Value="fm.entities.FormMasterVersionEO.VersionSeqPk"/>
       <Attr Name="_isUpdateable" Value="true"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="dge.entities.FormMasterVersionEO.VersionSeq"/>
+      <Item Value="fm.entities.FormMasterVersionEO.VersionSeq"/>
     </AttrArray>
   </AssociationEnd>
   <AssociationEnd
     Name="FormMasterQuestionEO"
     Cardinality="-1"
-    Owner="dge.entities.FormMasterQuestionEO">
+    Owner="fm.entities.FormMasterQuestionEO">
     <DesignTime>
       <Attr Name="_aggregation" Value="0"/>
       <Attr Name="_finderName" Value="FormMasterQuestionEO"/>
-      <Attr Name="_foreignKey" Value="dge.entities.FormMasterQuestionEO.VersionSeqFk"/>
+      <Attr Name="_foreignKey" Value="fm.entities.FormMasterQuestionEO.VersionSeqFk"/>
       <Attr Name="_isUpdateable" Value="true"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="dge.entities.FormMasterQuestionEO.VersionSeq"/>
+      <Item Value="fm.entities.FormMasterQuestionEO.VersionSeq"/>
     </AttrArray>
   </AssociationEnd>
 </Association>

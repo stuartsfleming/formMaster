@@ -105,7 +105,7 @@ FROM FORM_MASTER_VERSIONS FormMasterVersions]]>
     ColumnType="DATE"
     AliasName="ONLINE_DATE"
     Expression="ONLINE_DATE"
-    SQLType="TIMESTAMP">
+    SQLType="DATE">
     <DesignTime>
       <Attr Name="_DisplaySize" Value="7"/>
     </DesignTime>
@@ -115,7 +115,7 @@ FROM FORM_MASTER_VERSIONS FormMasterVersions]]>
   </AttrArray>
   <ViewLinkAccessor
     Name="FormMasterQuestionVO"
-    ViewLink="dge.viewObjects.viewLinks.VersionSeqFkLink"
+    ViewLink="fm.viewObjects.viewLinks.VersionSeqFkLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>

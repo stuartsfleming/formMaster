@@ -12,26 +12,26 @@
   <ViewLinkDefEnd
     Name="FormMasterVersionVO"
     Cardinality="1"
-    Owner="dge.viewObjects.FormMasterVersionVO"
+    Owner="fm.viewObjects.FormMasterVersionVO"
     Source="true">
     <DesignTime>
       <Attr Name="_finderName" Value="FormMasterVersionVO"/>
       <Attr Name="_isUpdateable" Value="true"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="dge.viewObjects.FormMasterVersionVO.VersionSeq"/>
+      <Item Value="fm.viewObjects.FormMasterVersionVO.VersionSeq"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
     Name="FormMasterQuestionVO"
     Cardinality="-1"
-    Owner="dge.viewObjects.FormMasterQuestionVO">
+    Owner="fm.viewObjects.FormMasterQuestionVO">
     <DesignTime>
       <Attr Name="_finderName" Value="FormMasterQuestionVO"/>
       <Attr Name="_isUpdateable" Value="true"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="dge.viewObjects.FormMasterQuestionVO.VersionSeq"/>
+      <Item Value="fm.viewObjects.FormMasterQuestionVO.VersionSeq"/>
     </AttrArray>
   </ViewLinkDefEnd>
 </ViewLink>

@@ -1,55 +1,53 @@
 <?xml version='1.0' encoding='windows-1252' ?>
 <!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+<!---->
 
 <JboProject
    xmlns="http://xmlns.oracle.com/bc4j"
    Name="Model"
    Version="11.1.1.64.93"
    SeparateXMLFiles="true"
-   PackageName="dge" >
+   PackageName="fm"
+   ExportIntfPackage="">
    <DesignTime>
-      <Attr Name="_jprName" Value="../../Model.jpr" />
-      <Attr Name="_appModuleNames0" Value="dge.services.FMAppModule" />
-      <Attr Name="_NamedConnection" Value="FORMMASTER" />
+      <Attr Name="_jprName" Value="../../Model.jpr"/>
+      <Attr Name="_appModuleNames0" Value="fm.services.FMAppModule"/>
+      <Attr Name="_NamedConnection" Value="FORMMASTER"/>
    </DesignTime>
    <Containee
       Name="assoc"
-      ObjectType="JboPackage"
-      PackageName="dge.entities.assoc" >
+      PackageName="fm.entities.assoc"
+      ObjectType="JboPackage">
       <DesignTime>
-         <Attr Name="_AS" Value="true" />
+         <Attr Name="_AS" Value="true"/>
       </DesignTime>
    </Containee>
    <Containee
       Name="entities"
-      ObjectType="JboPackage"
-      PackageName="dge.entities" >
+      PackageName="fm.entities"
+      ObjectType="JboPackage">
       <DesignTime>
-         <Attr Name="_EO" Value="true" />
+         <Attr Name="_EO" Value="true"/>
       </DesignTime>
    </Containee>
    <Containee
       Name="services"
-      ObjectType="JboPackage"
-      PackageName="dge.services" >
+      PackageName="fm.services"
+      ObjectType="JboPackage">
       <DesignTime>
-         <Attr Name="_AM" Value="true" />
+         <Attr Name="_AM" Value="true"/>
       </DesignTime>
    </Containee>
    <Containee
       Name="viewLinks"
-      ObjectType="JboPackage"
-      PackageName="dge.viewObjects.viewLinks" >
-      <DesignTime>
-         <Attr Name="_VL" Value="true" />
-      </DesignTime>
-   </Containee>
+      PackageName="fm.viewObjects.viewLinks"
+      ObjectType="JboPackage"/>
    <Containee
       Name="viewObjects"
-      ObjectType="JboPackage"
-      PackageName="dge.viewObjects" >
+      PackageName="fm.viewObjects"
+      ObjectType="JboPackage">
       <DesignTime>
-         <Attr Name="_VO" Value="true" />
+         <Attr Name="_VO" Value="true"/>
       </DesignTime>
    </Containee>
 </JboProject>

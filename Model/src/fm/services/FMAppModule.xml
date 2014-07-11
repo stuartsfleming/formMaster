@@ -12,35 +12,35 @@
   </DesignTime>
   <ViewUsage
     Name="FormMasterVO1"
-    ViewObjectName="dge.viewObjects.FormMasterVO"/>
+    ViewObjectName="fm.viewObjects.FormMasterVO"/>
   <ViewUsage
     Name="FormMasterQuestionVO1"
-    ViewObjectName="dge.viewObjects.FormMasterQuestionVO"/>
+    ViewObjectName="fm.viewObjects.FormMasterQuestionVO"/>
   <ViewUsage
     Name="FormMasterVersionVO1"
-    ViewObjectName="dge.viewObjects.FormMasterVersionVO"/>
+    ViewObjectName="fm.viewObjects.FormMasterVersionVO"/>
   <ViewUsage
     Name="FormMasterVersionVO2"
-    ViewObjectName="dge.viewObjects.FormMasterVersionVO"/>
+    ViewObjectName="fm.viewObjects.FormMasterVersionVO"/>
   <ViewUsage
     Name="FormMasterQuestionVO2"
-    ViewObjectName="dge.viewObjects.FormMasterQuestionVO"/>
+    ViewObjectName="fm.viewObjects.FormMasterQuestionVO"/>
   <ViewUsage
     Name="FormMasterClientDataVO1"
-    ViewObjectName="dge.viewObjects.FormMasterClientDataVO"/>
+    ViewObjectName="fm.viewObjects.FormMasterClientDataVO"/>
   <ViewUsage
     Name="FormMasterClientDataVO2"
-    ViewObjectName="dge.viewObjects.FormMasterClientDataVO"/>
+    ViewObjectName="fm.viewObjects.FormMasterClientDataVO"/>
   <ViewLinkUsage
     Name="FormMasterSeqFkLink1"
-    ViewLinkObjectName="dge.viewObjects.viewLinks.FormMasterSeqFkLink"
-    SrcViewUsageName="dge.services.FMAppModule.FormMasterVO1"
-    DstViewUsageName="dge.services.FMAppModule.FormMasterVersionVO2"
+    ViewLinkObjectName="fm.viewObjects.viewLinks.FormMasterSeqFkLink"
+    SrcViewUsageName="fm.services.FMAppModule.FormMasterVO1"
+    DstViewUsageName="fm.services.FMAppModule.FormMasterVersionVO2"
     Reversed="false"/>
   <ViewLinkUsage
     Name="VersionSeqFkLink1"
-    ViewLinkObjectName="dge.viewObjects.viewLinks.VersionSeqFkLink"
-    SrcViewUsageName="dge.services.FMAppModule.FormMasterVersionVO1"
-    DstViewUsageName="dge.services.FMAppModule.FormMasterQuestionVO2"
+    ViewLinkObjectName="fm.viewObjects.viewLinks.VersionSeqFkLink"
+    SrcViewUsageName="fm.services.FMAppModule.FormMasterVersionVO1"
+    DstViewUsageName="fm.services.FMAppModule.FormMasterQuestionVO2"
     Reversed="false"/>
 </AppModule>
