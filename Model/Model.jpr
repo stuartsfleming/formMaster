@@ -61,7 +61,7 @@
       <string v="oracle.bpm.fusion.repository.BPMProjectSettings/bpmProjectsProcessesContentSet"/>
    </list>
    <value n="defaultPackage" v="dge"/>
-   <value n="jbo.JpxName" v="dge.Model"/>
+   <value n="jbo.JpxName" v="fm.Model"/>
    <value n="JboProject" v="true"/>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
