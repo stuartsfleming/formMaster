@@ -90,6 +90,37 @@
    </hash>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
+         <hash n="fmTemplate">
+            <hash n="archiveOptions">
+               <value n="hasManifest" v="true"/>
+            </hash>
+            <hash n="fileGroups">
+               <list n="groups">
+                  <hash>
+                     <list n="contributors">
+                        <hash>
+                           <value n="type" v="2"/>
+                        </hash>
+                        <hash>
+                           <value n="type" v="7"/>
+                        </hash>
+                     </list>
+                     <value n="displayName" v="Project Output"/>
+                     <hash n="filters">
+                        <list n="rules"/>
+                     </hash>
+                     <value n="internalName" v="project-output"/>
+                     <value n="type" v="1"/>
+                  </hash>
+               </list>
+            </hash>
+            <url n="jarURL" path="deploy/fmTemplate.jar"/>
+            <hash n="libraryDependencies">
+               <value n="IncludeLibrariesFromOtherContainers" v="true"/>
+            </hash>
+            <value n="profileClass" v="oracle.jdeveloper.deploy.jar.ArchiveProfile"/>
+            <value n="profileName" v="fmTemplate"/>
+         </hash>
          <hash n="formMaster_ViewControllerTemplate_webapp1">
             <hash n="appletArchives"/>
             <hash n="appletFiles">
@@ -150,7 +181,7 @@
                   </hash>
                </list>
             </hash>
-            <url n="jarURL" path="deploy/formMaster_ViewControllerTemplate_webapp1.war"/>
+            <url n="jarURL" path="deploy/fmTemplate.war"/>
             <hash n="libraryDependencies">
                <value n="IncludeLibrariesFromOtherContainers" v="true"/>
             </hash>
@@ -159,12 +190,13 @@
          </hash>
       </hash>
       <list n="profileList">
+         <string v="fmTemplate"/>
          <string v="formMaster_ViewControllerTemplate_webapp1"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="formMaster-ViewControllerTemplate-webapp"/>
-      <value n="j2eeWebContextRoot" v="formMaster-ViewControllerTemplate-context-root"/>
+      <value n="j2eeWebAppName" v="fmTemplate"/>
+      <value n="j2eeWebContextRoot" v="fmTemplate"/>
    </hash>
    <hash n="oracle.jdeveloper.runner.RunConfigurations">
       <hash n="runConfigurationDefinitions">
