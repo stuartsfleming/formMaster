@@ -18,5 +18,6 @@
       <hash><url n="URL" path="git/git.jpr"/></hash>
       <hash><url n="URL" path="Model/Model.jpr"/></hash>
       <hash><url n="URL" path="ViewController/ViewController.jpr"/></hash>
+      <hash><url n="URL" path="ViewControllerTemplate/ViewControllerTemplate.jpr"/></hash>
    </list>
 </jws:workspace>
