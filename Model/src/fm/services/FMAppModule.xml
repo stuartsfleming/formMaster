@@ -13,34 +13,4 @@
   <ViewUsage
     Name="FormMasterVO1"
     ViewObjectName="fm.viewObjects.FormMasterVO"/>
-  <ViewUsage
-    Name="FormMasterQuestionVO1"
-    ViewObjectName="fm.viewObjects.FormMasterQuestionVO"/>
-  <ViewUsage
-    Name="FormMasterVersionVO1"
-    ViewObjectName="fm.viewObjects.FormMasterVersionVO"/>
-  <ViewUsage
-    Name="FormMasterVersionVO2"
-    ViewObjectName="fm.viewObjects.FormMasterVersionVO"/>
-  <ViewUsage
-    Name="FormMasterQuestionVO2"
-    ViewObjectName="fm.viewObjects.FormMasterQuestionVO"/>
-  <ViewUsage
-    Name="FormMasterClientDataVO1"
-    ViewObjectName="fm.viewObjects.FormMasterClientDataVO"/>
-  <ViewUsage
-    Name="FormMasterClientDataVO2"
-    ViewObjectName="fm.viewObjects.FormMasterClientDataVO"/>
-  <ViewLinkUsage
-    Name="FormMasterSeqFkLink1"
-    ViewLinkObjectName="fm.viewObjects.viewLinks.FormMasterSeqFkLink"
-    SrcViewUsageName="fm.services.FMAppModule.FormMasterVO1"
-    DstViewUsageName="fm.services.FMAppModule.FormMasterVersionVO2"
-    Reversed="false"/>
-  <ViewLinkUsage
-    Name="VersionSeqFkLink1"
-    ViewLinkObjectName="fm.viewObjects.viewLinks.VersionSeqFkLink"
-    SrcViewUsageName="fm.services.FMAppModule.FormMasterVersionVO1"
-    DstViewUsageName="fm.services.FMAppModule.FormMasterQuestionVO2"
-    Reversed="false"/>
 </AppModule>

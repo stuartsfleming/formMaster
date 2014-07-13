@@ -1,3 +1,5 @@
+-- @C:\JDeveloper\mywork\11117\formMaster\formMaster\Model\src\sql\tables.sql
+
 connect sys/admin@ssf as sysdba
 DROP USER formMaster CASCADE;
 
@@ -65,21 +67,47 @@ online_date    date   ,
 CONSTRAINT question_seq_pk PRIMARY KEY (question_seq),
 CONSTRAINT version_seq_fk    FOREIGN KEY (version_seq)     REFERENCES form_master_versions(version_seq)  );
 
+delete from FORM_MASTER_QUESTIONS ;
+delete from FORM_MASTER_VERSIONS ;
+delete from form_master ;
+commit ;
+
 
 INSERT INTO form_master (  form_master_seq        , FORM_NAME           , FORM_DESC     , USER_NAME     , ONLINE_DATE   )
                                  VALUES (   1                                       , 'Training Request'    , null                      ,  user                    , sysdate   );
 
 INSERT INTO FORM_MASTER_VERSIONS (  VERSION_SEQ , FORM_MASTER_SEQ       , VERSION       , VERSION_DESCR , USER_NAME     , ONLINE_DATE   )
-                                                        VALUES (   2                        , 1                                             ,  1                   ,'Version 1'                  ,  user                   , sysdate   );
+                                                               VALUES (   2                        , 1                                             ,  1                   ,'Version 1'                  ,  user                   , sysdate   );
 
 
 INSERT INTO FORM_MASTER_QUESTIONS (  QUESTION_SEQ       , VERSION_SEQ   ,  QUESTION_ORDER   , Question         , QUESTION_DATATYPE     , USER_NAME     , ONLINE_DATE   )
-                                                     VALUES (   3                                     , 2                             ,  1                                     ,  'When is it'      , 'd'                                            ,  user                   , sysdate   );
+                                                              VALUES (   3                                     , 2                             ,  1                                     ,  'When is it'      , 'd'                                            ,  user                   , sysdate   );
                 
 INSERT INTO FORM_MASTER_QUESTIONS (  QUESTION_SEQ       , VERSION_SEQ   ,  QUESTION_ORDER    , Question           , QUESTION_DATATYPE     , USER_NAME     , ONLINE_DATE   )
-                                                             VALUES (   4                           , 2                                , 2                                       , 'Where is it'       , 'ff'                                          ,  user                   , sysdate   );
+                                                                VALUES (  4                                    , 2                              , 2                                       , 'Where is it'       , 'ff'                                          ,  user                   , sysdate   );
                                                              
 commit ;                                                                     
+                                  
+INSERT INTO form_master (  form_master_seq        , FORM_NAME           , FORM_DESC     , USER_NAME     , ONLINE_DATE   )
+                                 VALUES (   2                                 , 'Time Off Request'    , null                      ,  user                    , sysdate   );
+
+INSERT INTO FORM_MASTER_VERSIONS (  VERSION_SEQ , FORM_MASTER_SEQ       , VERSION       , VERSION_DESCR , USER_NAME     , ONLINE_DATE   )
+                                                              VALUES (   3                         , 2                                            ,  1                   , 'Version 1'                  ,  user                   , sysdate   );
+
+
+INSERT INTO FORM_MASTER_QUESTIONS (  QUESTION_SEQ       , VERSION_SEQ   ,  QUESTION_ORDER   , Question         , QUESTION_DATATYPE     , USER_NAME     , ONLINE_DATE   )
+                                                                 VALUES (  5                                     ,3                             ,  1                                     ,  'Time off Type'      , 'l'                                            ,  user                   , sysdate   );
+              
+INSERT INTO FORM_MASTER_QUESTIONS (  QUESTION_SEQ       , VERSION_SEQ   ,  QUESTION_ORDER    , Question           , QUESTION_DATATYPE     , USER_NAME     , ONLINE_DATE   )
+                                                             VALUES   (   6                                   , 3                                , 2                                       , 'from date'       , 'd'                                          ,  user                   , sysdate   );
+                   
+INSERT INTO FORM_MASTER_QUESTIONS (  QUESTION_SEQ       , VERSION_SEQ   ,  QUESTION_ORDER    , Question           , QUESTION_DATATYPE     , USER_NAME     , ONLINE_DATE   )
+                                                             VALUES   (   7                                   , 3                                , 2                                       , 'To Date'       , 'd'                                          ,  user                   , sysdate   );
+                                                             
+commit ;                                        
+                                  
+                                  
+                                  
                                                              
 @s form_master             
 @s FORM_MASTER_VERSIONS
@@ -97,6 +125,7 @@ job_id                       role  ,
 manager_id             manager_id ,
 (select last_name||', '||first_name from hr.employees where employee_id = manager_id)   manager
 from hr.employees e  );
+
 
 
 
