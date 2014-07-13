@@ -7,8 +7,7 @@
    Name="Model"
    Version="11.1.1.64.93"
    SeparateXMLFiles="true"
-   PackageName="fm"
-   ExportIntfPackage="">
+   PackageName="fm">
    <DesignTime>
       <Attr Name="_jprName" Value="../../Model.jpr"/>
       <Attr Name="_appModuleNames0" Value="fm.services.FMAppModule"/>
@@ -16,15 +15,15 @@
    </DesignTime>
    <Containee
       Name="assoc"
-      PackageName="fm.entities.assoc"
+      PackageName="fm.eo.assoc"
       ObjectType="JboPackage">
       <DesignTime>
          <Attr Name="_AS" Value="true"/>
       </DesignTime>
    </Containee>
    <Containee
-      Name="entities"
-      PackageName="fm.entities"
+      Name="eo"
+      PackageName="fm.eo"
       ObjectType="JboPackage">
       <DesignTime>
          <Attr Name="_EO" Value="true"/>
@@ -40,11 +39,15 @@
    </Containee>
    <Containee
       Name="viewLinks"
-      PackageName="fm.viewObjects.viewLinks"
-      ObjectType="JboPackage"/>
+      PackageName="fm.vo.viewLinks"
+      ObjectType="JboPackage">
+      <DesignTime>
+         <Attr Name="_VL" Value="true"/>
+      </DesignTime>
+   </Containee>
    <Containee
-      Name="viewObjects"
-      PackageName="fm.viewObjects"
+      Name="vo"
+      PackageName="fm.vo"
       ObjectType="JboPackage">
       <DesignTime>
          <Attr Name="_VO" Value="true"/>

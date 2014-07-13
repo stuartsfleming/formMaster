@@ -12,5 +12,5 @@
   </DesignTime>
   <ViewUsage
     Name="FormMasterVO1"
-    ViewObjectName="fm.viewObjects.FormMasterVO"/>
+    ViewObjectName="fm.vo.FormMasterVO"/>
 </AppModule>

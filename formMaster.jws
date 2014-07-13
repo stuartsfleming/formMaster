@@ -17,6 +17,7 @@
    <list n="listOfChildren">
       <hash><url n="URL" path="git/git.jpr"/></hash>
       <hash><url n="URL" path="Model/Model.jpr"/></hash>
+      <hash><url n="URL" path="ModelTester/ModelTester.jpr"/></hash>
       <hash><url n="URL" path="ViewController/ViewController.jpr"/></hash>
    </list>
 </jws:workspace>
