@@ -131,7 +131,7 @@ FROM FORM_MASTER_QUESTIONS FormMasterQuestions]]>
   </AttrArray>
   <ViewLinkAccessor
     Name="FormMasterVersionVO"
-    ViewLink="fm.viewObjects.viewLinks.VersionSeqFkLink"
+    ViewLink="fm.vo.viewLinks.VersionSeqFkLink"
     Type="oracle.jbo.Row"
     Reversed="true"
     IsUpdateable="false"/>

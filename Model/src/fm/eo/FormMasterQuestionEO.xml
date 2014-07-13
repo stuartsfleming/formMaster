@@ -99,9 +99,9 @@
   </Attribute>
   <AccessorAttribute
     Name="FormMasterVersionEO"
-    Association="fm.entities.assoc.VersionSeqFkAssoc"
-    AssociationEnd="fm.entities.assoc.VersionSeqFkAssoc.FormMasterVersionEO"
-    AssociationOtherEnd="fm.entities.assoc.VersionSeqFkAssoc.FormMasterQuestionEO"
+    Association="fm.eo.assoc.VersionSeqFkAssoc"
+    AssociationEnd="fm.eo.assoc.VersionSeqFkAssoc.FormMasterVersionEO"
+    AssociationOtherEnd="fm.eo.assoc.VersionSeqFkAssoc.FormMasterQuestionEO"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <Key
@@ -111,7 +111,7 @@
       <Attr Name="_DBObjectName" Value="QUESTION_SEQ_PK"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="fm.entities.FormMasterQuestionEO.QuestionSeq"/>
+      <Item Value="fm.eo.FormMasterQuestionEO.QuestionSeq"/>
     </AttrArray>
   </Key>
   <Key
@@ -122,7 +122,7 @@
       <Attr Name="_DBObjectName" Value="VERSION_SEQ_FK"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="fm.entities.FormMasterQuestionEO.VersionSeq"/>
+      <Item Value="fm.eo.FormMasterQuestionEO.VersionSeq"/>
     </AttrArray>
   </Key>
 </Entity>

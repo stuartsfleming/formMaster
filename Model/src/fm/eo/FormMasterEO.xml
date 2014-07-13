@@ -77,9 +77,9 @@
   </Attribute>
   <AccessorAttribute
     Name="FormMasterVersionEO"
-    Association="fm.entities.assoc.FormMasterSeqFkAssoc"
-    AssociationEnd="fm.entities.assoc.FormMasterSeqFkAssoc.FormMasterVersionEO"
-    AssociationOtherEnd="fm.entities.assoc.FormMasterSeqFkAssoc.FormMasterEO"
+    Association="fm.eo.assoc.FormMasterSeqFkAssoc"
+    AssociationEnd="fm.eo.assoc.FormMasterSeqFkAssoc.FormMasterVersionEO"
+    AssociationOtherEnd="fm.eo.assoc.FormMasterSeqFkAssoc.FormMasterEO"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <Key
@@ -89,7 +89,7 @@
       <Attr Name="_DBObjectName" Value="FM_MASTER_SEQ_PK"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="fm.entities.FormMasterEO.FormMasterSeq"/>
+      <Item Value="fm.eo.FormMasterEO.FormMasterSeq"/>
     </AttrArray>
   </Key>
 </Entity>

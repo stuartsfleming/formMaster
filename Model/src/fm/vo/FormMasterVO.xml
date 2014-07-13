@@ -101,7 +101,7 @@ FROM FORM_MASTER FormMaster]]>
   </AttrArray>
   <ViewLinkAccessor
     Name="FormMasterVersionVO"
-    ViewLink="fm.viewObjects.viewLinks.FormMasterSeqFkLink"
+    ViewLink="fm.vo.viewLinks.FormMasterSeqFkLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>

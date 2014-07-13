@@ -87,16 +87,16 @@
   </Attribute>
   <AccessorAttribute
     Name="FormMasterQuestionEO"
-    Association="fm.entities.assoc.VersionSeqFkAssoc"
-    AssociationEnd="fm.entities.assoc.VersionSeqFkAssoc.FormMasterQuestionEO"
-    AssociationOtherEnd="fm.entities.assoc.VersionSeqFkAssoc.FormMasterVersionEO"
+    Association="fm.eo.assoc.VersionSeqFkAssoc"
+    AssociationEnd="fm.eo.assoc.VersionSeqFkAssoc.FormMasterQuestionEO"
+    AssociationOtherEnd="fm.eo.assoc.VersionSeqFkAssoc.FormMasterVersionEO"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <AccessorAttribute
     Name="FormMasterEO"
-    Association="fm.entities.assoc.FormMasterSeqFkAssoc"
-    AssociationEnd="fm.entities.assoc.FormMasterSeqFkAssoc.FormMasterEO"
-    AssociationOtherEnd="fm.entities.assoc.FormMasterSeqFkAssoc.FormMasterVersionEO"
+    Association="fm.eo.assoc.FormMasterSeqFkAssoc"
+    AssociationEnd="fm.eo.assoc.FormMasterSeqFkAssoc.FormMasterEO"
+    AssociationOtherEnd="fm.eo.assoc.FormMasterSeqFkAssoc.FormMasterVersionEO"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <Key
@@ -106,7 +106,7 @@
       <Attr Name="_DBObjectName" Value="VERSION_SEQ_PK"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="fm.entities.FormMasterVersionEO.VersionSeq"/>
+      <Item Value="fm.eo.FormMasterVersionEO.VersionSeq"/>
     </AttrArray>
   </Key>
   <Key
@@ -117,7 +117,7 @@
       <Attr Name="_DBObjectName" Value="FORM_MASTER_SEQ_FK"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="fm.entities.FormMasterVersionEO.FormMasterSeq"/>
+      <Item Value="fm.eo.FormMasterVersionEO.FormMasterSeq"/>
     </AttrArray>
   </Key>
 </Entity>

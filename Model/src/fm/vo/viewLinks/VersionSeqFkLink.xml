@@ -12,27 +12,27 @@
   <ViewLinkDefEnd
     Name="FormMasterVersionVO"
     Cardinality="1"
-    Owner="fm.viewObjects.FormMasterVersionVO"
+    Owner="fm.vo.FormMasterVersionVO"
     Source="true">
     <DesignTime>
+      <Attr Name="_accessor" Value="true"/>
       <Attr Name="_finderName" Value="FormMasterVersionVO"/>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_accessor" Value="true"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="fm.viewObjects.FormMasterVersionVO.VersionSeq"/>
+      <Item Value="fm.vo.FormMasterVersionVO.VersionSeq"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
     Name="FormMasterQuestionVO"
     Cardinality="-1"
-    Owner="fm.viewObjects.FormMasterQuestionVO">
+    Owner="fm.vo.FormMasterQuestionVO">
     <DesignTime>
       <Attr Name="_finderName" Value="FormMasterQuestionVO"/>
       <Attr Name="_isUpdateable" Value="true"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="fm.viewObjects.FormMasterQuestionVO.VersionSeq"/>
+      <Item Value="fm.vo.FormMasterQuestionVO.VersionSeq"/>
     </AttrArray>
   </ViewLinkDefEnd>
 </ViewLink>
