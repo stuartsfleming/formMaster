@@ -15,7 +15,6 @@
     Owner="fm.vo.FormMasterVO"
     Source="true">
     <DesignTime>
-      <Attr Name="_accessor" Value="true"/>
       <Attr Name="_finderName" Value="FormMasterVO"/>
       <Attr Name="_isUpdateable" Value="true"/>
     </DesignTime>
@@ -28,6 +27,7 @@
     Cardinality="-1"
     Owner="fm.vo.FormMasterVersionVO">
     <DesignTime>
+      <Attr Name="_accessor" Value="false"/>
       <Attr Name="_finderName" Value="FormMasterVersionVO"/>
       <Attr Name="_isUpdateable" Value="true"/>
     </DesignTime>

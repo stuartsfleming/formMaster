@@ -118,10 +118,4 @@ FROM FORM_MASTER_VERSIONS FormMasterVersions]]>
     ViewLink="fm.vo.viewLinks.VersionSeqFkLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
-  <ViewLinkAccessor
-    Name="FormMasterVO"
-    ViewLink="fm.vo.viewLinks.FormMasterSeqFkLink"
-    Type="oracle.jbo.Row"
-    Reversed="true"
-    IsUpdateable="false"/>
 </ViewObject>

@@ -99,9 +99,4 @@ FROM FORM_MASTER FormMaster]]>
   <AttrArray Name="KeyAttributes">
     <Item Value="FormMasterSeq"/>
   </AttrArray>
-  <ViewLinkAccessor
-    Name="FormMasterVersionVO"
-    ViewLink="fm.vo.viewLinks.FormMasterSeqFkLink"
-    Type="oracle.jbo.RowIterator"
-    IsUpdateable="false"/>
 </ViewObject>
