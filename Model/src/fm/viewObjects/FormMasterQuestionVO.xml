@@ -129,4 +129,10 @@ FROM FORM_MASTER_QUESTIONS FormMasterQuestions]]>
   <AttrArray Name="KeyAttributes">
     <Item Value="QuestionSeq"/>
   </AttrArray>
+  <ViewLinkAccessor
+    Name="FormMasterVersionVO"
+    ViewLink="fm.viewObjects.viewLinks.VersionSeqFkLink"
+    Type="oracle.jbo.Row"
+    Reversed="true"
+    IsUpdateable="false"/>
 </ViewObject>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<schema xmlns="http://xmlns.oracle.com/jdeveloper/1111/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">a932005d-6015-433f-ac12-91b381c89b6f</identifier>
+  </ID>
+  <name>FORMMASTER</name>
+</schema>
