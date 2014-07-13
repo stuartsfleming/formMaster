@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="fm.am.fmAppModule">
+      <AppModuleConfig name="fmAppModuleLocal" ApplicationName="fm.am.fmAppModule" DeployPlatform="LOCAL" jbo.project="dge.Model">
+         <Security AppModuleJndiName="fm.am.fmAppModule"/>
+         <Custom JDBCDataSource="java:comp/env/jdbc/FORMMASTERDS"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="fmAppModuleShared" ApplicationName="fm.am.fmAppModule" DeployPlatform="LOCAL" jbo.project="dge.Model">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Security AppModuleJndiName="fm.am.fmAppModule"/>
+         <Custom JDBCDataSource="java:comp/env/jdbc/FORMMASTERDS"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>
