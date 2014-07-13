@@ -61,6 +61,8 @@
       <string v="oracle.bpm.fusion.repository.BPMProjectSettings/bpmProjectsProcessesContentSet"/>
    </list>
    <value n="defaultPackage" v="dge"/>
+   <value n="jbo.JpxName" v="dge.Model"/>
+   <value n="JboProject" v="true"/>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
          <string v="Java"/>
@@ -68,6 +70,7 @@
          <string v="Database"/>
       </list>
    </hash>
+   <value n="oracle.jbo.SavedPreferences" v="true"/>
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
       <list n="copyRes">
          <string v=".gif"/>
