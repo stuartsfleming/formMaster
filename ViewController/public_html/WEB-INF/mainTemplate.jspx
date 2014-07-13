@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <af:pageTemplateDef var="attrs" id="idtmp">
+    <af:panelStretchLayout id="pt_psl1" topHeight="40px" bottomHeight="33px">
+      <f:facet name="bottom">
+        <af:panelStretchLayout id="pt_psl4" startWidth="164px" endWidth="265px">
+          <f:facet name="center">
+            <af:facetRef facetName="facetBottomCenter"/>
+          </f:facet>
+          <f:facet name="start">
+            <af:facetRef facetName="facetBottomLeft"/>
+          </f:facet>
+          <f:facet name="end">
+            <af:facetRef facetName="facetBottomRight"/>
+          </f:facet>
+        </af:panelStretchLayout>
+      </f:facet>
+      <f:facet name="center">
+        <af:decorativeBox id="pt_db1" topHeight="30px">
+          <f:facet name="center">
+            <af:facetRef facetName="facetCenter"/>
+          </f:facet>
+          <f:facet name="top">
+            <af:panelStretchLayout id="pt_psl3" startWidth="293px" endWidth="307px">
+              <f:facet name="center">
+                <af:facetRef facetName="facetUpperCenter"/>
+              </f:facet>
+              <f:facet name="start">
+                <af:facetRef facetName="facetUpperLeft"/>
+              </f:facet>
+              <f:facet name="end">
+                <af:facetRef facetName="facetUpperRight"/>
+              </f:facet>
+            </af:panelStretchLayout>
+          </f:facet>
+        </af:decorativeBox>
+      </f:facet>
+      <f:facet name="top">
+        <af:panelStretchLayout id="pt_psl2" startWidth="167px" endWidth="181px">
+          <f:facet name="center">
+            <af:panelGroupLayout layout="vertical" xmlns:af="http://xmlns.oracle.com/adf/faces/rich" id="pt_pgl1" halign="center">
+              <af:outputText id="pt_ot1" inlineStyle="font-size:large; font-weight:bolder; color:Black; text-align:center;" value="#{attrs.TmpTitleMain}"/>
+            </af:panelGroupLayout>
+          </f:facet>
+          <f:facet name="start">
+            <af:facetRef facetName="facetTopLeft"/>
+          </f:facet>
+          <f:facet name="end">
+             <af:panelGroupLayout id="pglogin" layout="vertical" styleClass=".AFStretchWidth" halign="end">
+              <af:commandImageLink text="Logout" id="commandImageLink1" icon="/image/glbl_logout.gif" rendered="#{securityContext.authenticated}" partialSubmit="true"
+                                   immediate="false" action="#{login.logout}"/>
+              <af:commandImageLink text="Login" id="cil1" icon="/image/glbl_login_msg.gif" rendered="#{!securityContext.authenticated}">
+                <af:showPopupBehavior popupId="p1" triggerType="action" align="startAfter" alignId="cil1"/>
+              </af:commandImageLink>
+              <af:popup id="p1" binding="#{HomeBean.popupP1}">
+                <af:dialog id="d2" title="Please Login" type="okCancel" closeIconVisible="false" modal="true" stretchChildren="none" dialogListener="#{login.onLoginAction}">
+                  <af:panelFormLayout id="pfl5">
+                    <af:inputText label="Username" id="it34" columns="20" value="#{login.username}"/>
+                    <af:inputText label="Password" id="it35" secret="true" columns="20" value="#{login.password}"/>
+                    <af:message id="m2" for="it35" messageType="error"/>
+                  </af:panelFormLayout>
+                </af:dialog>
+              </af:popup>
+            </af:panelGroupLayout>
+          </f:facet>
+        </af:panelStretchLayout>
+      </f:facet>
+    </af:panelStretchLayout>
+    <af:xmlContent>
+      <component xmlns="http://xmlns.oracle.com/adf/faces/rich/component">
+        <display-name>mainTemplate</display-name>
+        <facet>
+          <facet-name>
+            facetTopLeft
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            facetTopCenter
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            facetTopRight
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            facetUpperLeft
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            facetUpperCenter
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            facetUpperRight
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            facetCenter
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            facetBottomLeft
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            facetBottomCenter
+          </facet-name>
+        </facet>
+        <facet>
+          <facet-name>
+            facetBottomRight
+          </facet-name>
+        </facet>
+        <attribute>
+          <attribute-name>
+            TmpTitleMain
+          </attribute-name>
+          <attribute-class>
+            java.lang.String
+          </attribute-class>
+          <default-value>
+            Application Title
+          </default-value>
+          <required>
+            true
+          </required>
+        </attribute>
+      </component>
+    </af:xmlContent>
+  </af:pageTemplateDef>
+  <!--oracle-jdev-comment:preferred-managed-bean-name:homeManagedBean-->
+</jsp:root>
